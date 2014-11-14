@@ -1,0 +1,12 @@
+{ "manifest_version" : 2,
+  "name"             : "On Heroku",
+  "version"          : "2.0",
+  "description"      : "Is the website on the current tab on Heroku?",
+  "permissions"      : [ "tabs", "webRequest", "http://*/*", "https://*/*" ],
+  "background"       : { "scripts":["background.js"] },
+  "icons"            : { "128":"images/icon.png" },
+  "page_action"      : {
+    "default_title"  : "Application runs on Heroku",
+    "default_icon"   :"images/icon.png"
+  }
+}
