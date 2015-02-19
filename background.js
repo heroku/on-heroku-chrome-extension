@@ -5,7 +5,7 @@ var rxViaHeroku     = /vegur$/
 function domainFromURL(url) {
   var domain = url.match(rxDomain);
   if (domain === null) return;
-  return domain[0];
+  return domain[1];
 }
 
 chrome.webRequest.onHeadersReceived.addListener(function(details) {
