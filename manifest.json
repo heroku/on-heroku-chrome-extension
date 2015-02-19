@@ -1,12 +1,15 @@
 { "manifest_version" : 2,
   "name"             : "On Heroku",
-  "version"          : "2.0",
+  "version"          : "2.1",
   "description"      : "Is the website on the current tab on Heroku?",
   "permissions"      : [ "tabs", "webRequest", "http://*/*", "https://*/*" ],
   "background"       : { "scripts":["background.js"] },
-  "icons"            : { "128":"images/icon.png" },
+  "icons"            : { "16": "images/heroku-icon-16.png",
+                         "48": "images/heroku-icon-48.png",
+                        "128": "images/heroku-icon-128.png" },
   "page_action"      : {
     "default_title"  : "Application runs on Heroku",
-    "default_icon"   :"images/icon.png"
+    "default_icon"   : { "19": "images/heroku-icon-19.png",
+                         "38": "images/heroku-icon-38.png" }
   }
 }
