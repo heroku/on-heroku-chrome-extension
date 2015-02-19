@@ -1,5 +1,7 @@
 # On Heroku for Google Chrome
 
-A Google Chrome extension which shows a Heroku logo on the address bar if a web site is hosted on Heroku.
+A Google Chrome extension which tells if the current web site is running on Heroku.
+
+When a web site is on Heroku, you'll see a Heroku icon like this:
 
 ![screenshot](images/screenshot.png)
