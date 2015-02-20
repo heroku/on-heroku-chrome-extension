@@ -19,9 +19,9 @@ chrome.webRequest.onHeadersReceived.addListener(function(details) {
 { urls:["http://*/*", "https://*/*"] }, ["responseHeaders"]);
 
 function updateOnHerokuFlagForTab(tab) {
-  var domain    = domainFromURL(tab.url);
-  var on_heroku = domainsOnHeroku[domain];
-  var action    = { true:"show", false:"hide" }[!!on_heroku];
+  var domain   = domainFromURL(tab.url);
+  var onHeroku = domainsOnHeroku[domain];
+  var action   = { true:"show", false:"hide" }[!!onHeroku];
   chrome.pageAction[action](tab.id);
 }
 
